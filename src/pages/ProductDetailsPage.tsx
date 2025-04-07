@@ -28,7 +28,7 @@ const ProductDetailsPage: React.FC = () => {
           <Grid item xs={12} md={6}>
             <Box
               component="img"
-              src={product.imageUrl}
+              src={product.imageUrl.startsWith('http') ? product.imageUrl : process.env.PUBLIC_URL + product.imageUrl}
               alt={product.name}
               sx={{
                 width: '100%',
