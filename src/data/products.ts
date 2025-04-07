@@ -19,7 +19,7 @@ export const products: Product[] = [
     name: 'Lip Scrub',
     description: 'Get rid of your lip pigmentation with this natural solution! Gives your lips the gentle exfoliation to remove all the dead skin cells and make it super soft, all this with natural ingredients.',
     price: 250,
-    imageUrl: `${PLACEHOLDER_IMAGE}/F3AAA6/ffffff?text=Lip+Scrub`,
+    imageUrl: process.env.PUBLIC_URL + "/images/products/lip_scrub.png",
     category: CATEGORIES.LIP_CARE
   },
   {
@@ -27,7 +27,7 @@ export const products: Product[] = [
     name: 'Lip Balm',
     description: "Peachy Glow's lip balm is made with Shea Butter, Almond Oil, Beetroot powder, Coconut oil, and extra love. Helps with dry lips and chapped lips.",
     price: 180,
-    imageUrl: `${PLACEHOLDER_IMAGE}/F3AAA6/ffffff?text=Lip+Balm`,
+    imageUrl: process.env.PUBLIC_URL + "/images/products/lip_balm.jpg",
     category: CATEGORIES.LIP_CARE
   },
 
@@ -37,7 +37,7 @@ export const products: Product[] = [
     name: 'Whipped Soap',
     description: 'Our Whipped Soap is a semi-solid, fluffy, and creamy blend that doubles as a luxurious body wash and a gentle shaving cream. Infused with 40% glycerin and plant-based ingredients, it softens and hydrates your skin without leaving it dry. Available in delightful fragrances like Pink Rose, Lavender, Haldi Kesar, Tutti Fruity, Chocolate Vanilla, and Cocoa Coffee.',
     price: 350,
-    imageUrl: `${PLACEHOLDER_IMAGE}/F3AAA6/ffffff?text=Whipped+Soap`,
+    imageUrl: process.env.PUBLIC_URL + "/images/products/whipped_soap.jpg",
     category: CATEGORIES.BODY_CARE
   },
   {
@@ -45,7 +45,7 @@ export const products: Product[] = [
     name: 'Whipped Scrub',
     description: "Peachy Glow's Whipped scrub is loaded with walnut. Exfoliates your skin gently and makes it super soft. Helps in removing dead skin cells naturally.",
     price: 400,
-    imageUrl: `${PLACEHOLDER_IMAGE}/F3AAA6/ffffff?text=Whipped+Scrub`,
+    imageUrl: process.env.PUBLIC_URL + "/images/products/whipped_scrub.jpg",
     category: CATEGORIES.BODY_CARE
   },
   {
@@ -53,7 +53,7 @@ export const products: Product[] = [
     name: 'Body Butter',
     description: 'Indulge your skin with our rich and velvety Body Butter — a thick, deeply hydrating moisturizer crafted to nourish and protect. It provides intense moisture while forming a gentle barrier to lock it in, leaving your skin soft, supple, and radiant. Choose from our luxurious fragrance options: Aromatic Floral, Berry Blast, Aqua Madness, Gucci Rush, and Strawberry.',
     price: 300,
-    imageUrl: `${PLACEHOLDER_IMAGE}/F3AAA6/ffffff?text=Body+Butter`,
+    imageUrl: process.env.PUBLIC_URL + "/images/products/body_butter.jpg",
     category: CATEGORIES.BODY_CARE
   },
   {
@@ -61,7 +61,7 @@ export const products: Product[] = [
     name: 'Foot Soak',
     description: 'Unwind after a long day with our soothing Foot Soaks, made with therapeutic Epsom salt to soften and refresh tired feet. This relaxing soak helps relieve stress, ease muscle pain, and even promotes better circulation to prevent blood clots. Available in calming fragrances like Rose, Aqua, and Lavender.',
     price: 150,
-    imageUrl: `${PLACEHOLDER_IMAGE}/F3AAA6/ffffff?text=Foot+Soak`,
+    imageUrl: process.env.PUBLIC_URL + "/images/products/foot_soak.jpg",
     category: CATEGORIES.BODY_CARE
   },
   {
@@ -69,7 +69,7 @@ export const products: Product[] = [
     name: 'Sugar Scrub',
     description: 'Treat your skin to the gentle care it deserves with our all-natural Sugar Scrub. Designed to exfoliate and reveal softer, smoother skin, it effectively removes dead skin cells, improves texture, and helps prevent ingrown hairs. With a range of irresistible fragrances including Vanilla, Coco Lush, Purple Haze, Watermelon Sugar, Aqua Madness, and Fruit Punch, it turns your skincare routine into a sensorial delight.',
     price: 350,
-    imageUrl: `${PLACEHOLDER_IMAGE}/F3AAA6/ffffff?text=Sugar+Scrub`,
+    imageUrl: process.env.PUBLIC_URL + "/images/products/sugar_scrub.jpg",
     category: CATEGORIES.BODY_CARE
   },
 
@@ -79,7 +79,7 @@ export const products: Product[] = [
     name: 'Kumkumadi Oil',
     description: "Peachy Glow's Kumkumadi Oil is a luxurious blend of saffron and 24 potent herbs, carefully crafted to enhance your skin's natural glow and visibly reduce pigmentation. This all-natural elixir nourishes deeply, leaving your skin radiant, even-toned, and beautifully refreshed.",
     price: 500,
-    imageUrl: `${PLACEHOLDER_IMAGE}/F3AAA6/ffffff?text=Kumkumadi+Oil`,
+    imageUrl: process.env.PUBLIC_URL + "/images/products/kumkumadi_oil.jpg",
     category: CATEGORIES.FACE_CARE
   },
   {
@@ -87,7 +87,7 @@ export const products: Product[] = [
     name: 'Aloe Gel',
     description: "Peachy Glow's Aloe Vera Gel is a 100% natural formula made from farm-fresh aloe pulp, free from added colors or fragrance. It gently soothes the skin, helps reduce acne, and provides relief from burns and insect bites. With its deep hydrating properties, it leaves your skin feeling calm, refreshed, and nourished.",
     price: 140,
-    imageUrl: `${PLACEHOLDER_IMAGE}/F3AAA6/ffffff?text=Aloe+Gel`,
+    imageUrl: process.env.PUBLIC_URL + "/images/products/aloe_gel.png",
     category: CATEGORIES.FACE_CARE
   },
   {
@@ -95,7 +95,7 @@ export const products: Product[] = [
     name: 'Kumkumadi Toner',
     description: 'Brighten your skincare routine with our luxurious Kumkumadi Toner, infused with the goodness of saffron to naturally enhance your skin tone. This gentle yet effective toner helps reduce pigmentation, deeply hydrates the skin, and tightens pores for a fresh, radiant glow. A perfect step toward achieving even-toned, supple skin.',
     price: 450,
-    imageUrl: `${PLACEHOLDER_IMAGE}/F3AAA6/ffffff?text=Kumkumadi+Toner`,
+    imageUrl: process.env.PUBLIC_URL + "/images/products/kumkumadi_toner.png",
     category: CATEGORIES.FACE_CARE
   },
   {
@@ -103,7 +103,7 @@ export const products: Product[] = [
     name: 'Under Eye Oil',
     description: 'The Under Eye Oil is a powerful, natural blend formulated to reduce dark circles and puffiness. Infused with the goodness of nutmeg, it hydrates and tightens the delicate under-eye area, helping to diminish under-eye bags and restore a fresh, well-rested look.',
     price: 500,
-    imageUrl: `${PLACEHOLDER_IMAGE}/F3AAA6/ffffff?text=Under+Eye+Oil`,
+    imageUrl: process.env.PUBLIC_URL + "/images/products/under_eye_oil.jpg",
     category: CATEGORIES.FACE_CARE
   },
 
@@ -113,7 +113,7 @@ export const products: Product[] = [
     name: 'Rosemary Hydrosol',
     description: 'The Rosemary Hydrosol is a steam-distilled scalp mist specially crafted to promote healthy hair growth. It helps strengthen hair follicles, soothes itchiness, and improves overall scalp health, making it an essential part of your natural hair care routine.',
     price: 350,
-    imageUrl: `${PLACEHOLDER_IMAGE}/F3AAA6/ffffff?text=Rosemary+Hydrosol`,
+    imageUrl: process.env.PUBLIC_URL + "/images/products/rosemary_hydrosol.jpg",
     category: CATEGORIES.HAIR_CARE
   },
   
@@ -123,7 +123,7 @@ export const products: Product[] = [
     name: 'Soy Wax Candles',
     description: 'Handcrafted soy wax candles that create a cozy atmosphere with natural, clean-burning properties.',
     price: 250,
-    imageUrl: `${PLACEHOLDER_IMAGE}/F3AAA6/ffffff?text=Soy+Wax+Candles`,
+    imageUrl: process.env.PUBLIC_URL + "/images/products/soy_wax_candles.jpg",
     category: CATEGORIES.OTHER
   },
   {
@@ -131,7 +131,7 @@ export const products: Product[] = [
     name: 'Neem Wooden Comb',
     description: 'Natural neem wood comb that helps distribute scalp oils and promotes healthy hair and scalp.',
     price: 180,
-    imageUrl: `${PLACEHOLDER_IMAGE}/F3AAA6/ffffff?text=Neem+Wooden+Comb`,
+    imageUrl: process.env.PUBLIC_URL + "/images/products/neem_wooden_comb.png",
     category: CATEGORIES.OTHER
   },
   {
@@ -139,7 +139,7 @@ export const products: Product[] = [
     name: 'Donut Soaps',
     description: 'Cute donut-shaped soaps that make washing hands a delightful experience, perfect for kids and adults alike.',
     price: 150,
-    imageUrl: `${PLACEHOLDER_IMAGE}/F3AAA6/ffffff?text=Donut+Soaps`,
+    imageUrl: process.env.PUBLIC_URL + "/images/products/donut_soaps.png",
     category: CATEGORIES.OTHER
   }
 ];

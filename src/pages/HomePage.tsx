@@ -63,7 +63,7 @@ const HomePage: React.FC = () => {
             <Grid item xs={12} md={6}>
               <Box 
                 component="img" 
-                src={process.env.PUBLIC_URL + "/hero-image.jpg"} 
+                src={process.env.PUBLIC_URL + "/images/multi.jpg"} 
                 alt="Natural skincare products" 
                 sx={{ 
                   width: '100%', 
@@ -87,7 +87,7 @@ const HomePage: React.FC = () => {
               fontFamily: "'Playfair Display', serif"
             }}
           >
-            WHY CHOOSE US OK
+            WHY CHOOSE US
           </Typography>
           <Typography variant="body1" sx={{ maxWidth: 800, mx: 'auto' }}>
             We are a homegrown brand committed to quality, crafting skincare with only natural ingredients. Our products are kind to your skin, safe for your body, and gentle on the planet — promoting beauty through sustainability.
