@@ -1,46 +1,89 @@
-# Getting Started with Create React App
+# Peachy Glow E-commerce Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive e-commerce website for Peachy Glow, a woman-led natural skincare brand. Built with React, TypeScript, and Material-UI.
+
+## Features
+
+- 🛍️ Product catalog with categories
+- 🔍 Detailed product pages
+- 📱 Fully responsive design
+- 🎨 Beautiful, on-brand UI
+- ⚡ Fast and optimized performance
+
+## Tech Stack
+
+- React 18
+- TypeScript
+- Material-UI v5
+- React Router v6
+
+## Getting Started
+
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/peachy-glow.git
+```
+
+2. Install dependencies:
+```bash
+cd peachy-glow
+npm install
+```
+
+3. Start the development server:
+```bash
+npm start
+```
+
+4. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+## Project Structure
+
+```
+peachy-glow/
+├── public/
+│   └── images/         # Static images
+├── src/
+│   ├── components/     # Reusable components
+│   ├── pages/         # Page components
+│   ├── data/          # Static data
+│   └── App.tsx        # Main app component
+└── package.json
+```
 
 ## Available Scripts
 
-In the project directory, you can run:
+- `npm start` - Runs the app in development mode
+- `npm test` - Launches the test runner
+- `npm run build` - Builds the app for production
+- `npm run eject` - Ejects from Create React App
 
-### `npm start`
+## Contributing
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## License
 
-### `npm test`
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## About the Project
 
-### `npm run build`
+Peachy Glow is a woman-led natural skincare brand selling handmade products crafted with natural ingredients. This website showcases their product catalog, shares their story, and provides a way for customers to get in touch.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Future Enhancements
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The current version is a display-only website. Future enhancements will include:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Authentication
+- Shopping cart functionality
+- Checkout process
+- Order management
 
-### `npm run eject`
+## Contact
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+For questions or feedback about the website, please contact us at peachyyglow@gmail.com.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
