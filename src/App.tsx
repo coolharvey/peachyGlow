@@ -8,6 +8,7 @@ import ProductsPage from './pages/ProductsPage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 import ProductDetailsPage from './pages/ProductDetailsPage';
+import ScrollToTop from './components/ScrollToTop';
 
 // Create a theme instance.
 const theme = createTheme({
@@ -74,6 +75,7 @@ const App: React.FC = () => {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <Router>
+        <ScrollToTop />
         <Box 
           sx={{ 
             display: 'flex',
