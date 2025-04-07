@@ -73,7 +73,7 @@ const App: React.FC = () => {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <Router>
+      <Router basename="/peachyGlow">
         <Box 
           sx={{ 
             display: 'flex',
