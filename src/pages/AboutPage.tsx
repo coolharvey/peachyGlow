@@ -58,7 +58,7 @@ const AboutPage: React.FC = () => {
           <Grid item xs={12} md={6}>
             <Paper elevation={0} sx={{ borderRadius: 4, overflow: 'hidden' }}>
               <img 
-                src={process.env.PUBLIC_URL + "/images/Founder.png"}
+                src="/images/Founder.png"
                 alt="Founder of Peachy Glow" 
                 style={{ 
                   width: '100%', 

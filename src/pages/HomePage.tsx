@@ -20,7 +20,7 @@ const HomePage: React.FC = () => {
             <Grid item xs={12} md={6}>
               <Box
                 component="img"
-                src={process.env.PUBLIC_URL + "/images/Brand_logo.png"}
+                src="/images/Brand_logo.png"
                 alt="Peachy Glow"
                 sx={{
                   height: 80,
@@ -217,7 +217,7 @@ const HomePage: React.FC = () => {
           <Grid item xs={12} md={6}>
             <Box 
               component="img" 
-              src={process.env.PUBLIC_URL + "/images/Founder.png"}
+              src="/images/Founder.png"
               alt="Founder of Peachy Glow" 
               sx={{ 
                 width: '100%', 

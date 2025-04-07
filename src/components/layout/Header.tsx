@@ -34,7 +34,7 @@ const Header: React.FC = () => {
       >
         <Box
           component="img"
-          src={process.env.PUBLIC_URL + "/images/Brand_logo.png"}
+          src="/images/Brand_logo.png"
           alt="Peachy Glow"
           sx={{
             height: 50,
@@ -82,7 +82,7 @@ const Header: React.FC = () => {
             >
               <Box
                 component="img"
-                src={process.env.PUBLIC_URL + "/images/Brand_logo.png"}
+                src="/images/Brand_logo.png"
                 alt="Peachy Glow"
                 sx={{
                   height: 40,
