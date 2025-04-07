@@ -32,6 +32,7 @@ const ProductsPage: React.FC = () => {
             sx={{ 
               fontFamily: "'Playfair Display', serif",
               fontWeight: 500,
+              fontSize: { xs: '1.75rem', sm: '2.25rem', md: '3rem' }
             }}
           >
             NATURAL SKINCARE PRODUCTS
@@ -39,7 +40,10 @@ const ProductsPage: React.FC = () => {
           <Typography 
             variant="h5" 
             align="center" 
-            sx={{ fontWeight: 300 }}
+            sx={{ 
+              fontWeight: 300,
+              fontSize: { xs: '1.1rem', sm: '1.3rem', md: '1.5rem' }
+            }}
           >
             Glow the Natural Way!
           </Typography>
@@ -54,7 +58,7 @@ const ProductsPage: React.FC = () => {
 
       {/* Category Navigation */}
       <Container>
-        <Box sx={{ borderBottom: 1, borderColor: 'divider', mb: 4 }}>
+        <Box sx={{ borderBottom: 1, borderColor: 'divider', mb: 4, overflowX: 'auto' }}>
           <Tabs 
             value={currentCategory} 
             onChange={handleCategoryChange} 
@@ -64,9 +68,10 @@ const ProductsPage: React.FC = () => {
             sx={{ 
               '& .MuiTab-root': { 
                 textTransform: 'none',
-                fontSize: '1rem',
+                fontSize: { xs: '0.875rem', sm: '1rem' },
                 fontWeight: 500,
-                px: 3,
+                px: { xs: 2, sm: 3 },
+                minWidth: { xs: 'auto', sm: 90 },
                 '&.Mui-selected': {
                   color: '#E38F8B'
                 }

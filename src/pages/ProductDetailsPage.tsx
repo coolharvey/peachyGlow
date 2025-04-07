@@ -40,6 +40,8 @@ const ProductDetailsPage: React.FC = () => {
                 width: '100%',
                 borderRadius: 2,
                 boxShadow: 3,
+                maxHeight: { xs: '350px', md: '500px' },
+                objectFit: 'contain'
               }}
             />
           </Grid>
@@ -50,7 +52,8 @@ const ProductDetailsPage: React.FC = () => {
               gutterBottom
               sx={{
                 fontFamily: "'Playfair Display', serif",
-                mb: 2
+                mb: 2,
+                fontSize: { xs: '2rem', sm: '2.5rem', md: '3rem' }
               }}
             >
               {product.name}
@@ -60,7 +63,8 @@ const ProductDetailsPage: React.FC = () => {
               color="primary"
               sx={{
                 mb: 3,
-                fontWeight: 'bold'
+                fontWeight: 'bold',
+                fontSize: { xs: '1.5rem', sm: '1.75rem', md: '2rem' }
               }}
             >
               ₹{product.price}
@@ -72,40 +76,43 @@ const ProductDetailsPage: React.FC = () => {
             <Typography variant="subtitle1" sx={{ mb: 2, color: 'text.secondary' }}>
               Category: {product.category}
             </Typography>
-            <Button
-              variant="contained"
-              size="large"
-              sx={{
-                backgroundColor: '#F3AAA6',
-                '&:hover': {
-                  backgroundColor: '#E38F8B'
-                },
-                mt: 3,
-                px: 4,
-                py: 1.5
-              }}
-            >
-              Add to Cart
-            </Button>
-            <Button
-              onClick={handleBackToProducts}
-              variant="outlined"
-              size="large"
-              sx={{
-                borderColor: '#F3AAA6',
-                color: '#D6635F',
-                '&:hover': {
-                  borderColor: '#E38F8B',
-                  backgroundColor: 'rgba(243, 170, 166, 0.1)'
-                },
-                mt: 3,
-                ml: 2,
-                px: 4,
-                py: 1.5
-              }}
-            >
-              Back to Products
-            </Button>
+            <Box sx={{ display: 'flex', flexDirection: { xs: 'column', sm: 'row' }, mt: 3 }}>
+              <Button
+                variant="contained"
+                size="large"
+                sx={{
+                  backgroundColor: '#F3AAA6',
+                  '&:hover': {
+                    backgroundColor: '#E38F8B'
+                  },
+                  px: { xs: 2, sm: 4 },
+                  py: 1.5,
+                  width: { xs: '100%', sm: 'auto' }
+                }}
+              >
+                Add to Cart
+              </Button>
+              <Button
+                onClick={handleBackToProducts}
+                variant="outlined"
+                size="large"
+                sx={{
+                  borderColor: '#F3AAA6',
+                  color: '#D6635F',
+                  '&:hover': {
+                    borderColor: '#E38F8B',
+                    backgroundColor: 'rgba(243, 170, 166, 0.1)'
+                  },
+                  mt: { xs: 2, sm: 0 },
+                  ml: { xs: 0, sm: 2 },
+                  px: { xs: 2, sm: 4 },
+                  py: 1.5,
+                  width: { xs: '100%', sm: 'auto' }
+                }}
+              >
+                Back to Products
+              </Button>
+            </Box>
           </Grid>
         </Grid>
       </Container>

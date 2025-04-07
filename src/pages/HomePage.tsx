@@ -23,10 +23,11 @@ const HomePage: React.FC = () => {
                 src={process.env.PUBLIC_URL + "/images/Brand_logo.png"}
                 alt="Peachy Glow"
                 sx={{
-                  height: 80,
+                  height: { xs: 60, md: 80 },
                   width: 'auto',
                   mb: 2,
-                  display: 'block'
+                  display: 'block',
+                  mx: { xs: 'auto', md: 'inherit' }
                 }}
               />
               <Typography
@@ -35,30 +36,39 @@ const HomePage: React.FC = () => {
                 sx={{ 
                   mb: 4,
                   fontWeight: 500,
-                  color: '#333'
+                  color: '#333',
+                  fontSize: { xs: '1.5rem', sm: '1.75rem', md: '2.125rem' },
+                  textAlign: { xs: 'center', md: 'left' }
                 }}
               >
                 NATURAL SKINCARE PRODUCTS
               </Typography>
-              <Typography variant="h6" sx={{ mb: 4, fontWeight: 300 }}>
+              <Typography variant="h6" sx={{ 
+                mb: 4, 
+                fontWeight: 300,
+                fontSize: { xs: '1rem', sm: '1.25rem' },
+                textAlign: { xs: 'center', md: 'left' }
+              }}>
                 Glow the Natural Way!
               </Typography>
-              <Button 
-                component={Link} 
-                to="/products" 
-                variant="contained" 
-                size="large"
-                sx={{ 
-                  backgroundColor: '#F3AAA6', 
-                  '&:hover': { 
-                    backgroundColor: '#E38F8B' 
-                  },
-                  px: 4,
-                  py: 1.5
-                }}
-              >
-                Shop Now
-              </Button>
+              <Box sx={{ textAlign: { xs: 'center', md: 'left' } }}>
+                <Button 
+                  component={Link} 
+                  to="/products" 
+                  variant="contained" 
+                  size="large"
+                  sx={{ 
+                    backgroundColor: '#F3AAA6', 
+                    '&:hover': { 
+                      backgroundColor: '#E38F8B' 
+                    },
+                    px: { xs: 3, md: 4 },
+                    py: 1.5
+                  }}
+                >
+                  Shop Now
+                </Button>
+              </Box>
             </Grid>
             <Grid item xs={12} md={6}>
               <Box 
@@ -84,12 +94,17 @@ const HomePage: React.FC = () => {
             component="h2" 
             gutterBottom
             sx={{ 
-              fontFamily: "'Playfair Display', serif"
+              fontFamily: "'Playfair Display', serif",
+              fontSize: { xs: '1.75rem', sm: '2rem', md: '2.125rem' }
             }}
           >
             WHY CHOOSE US
           </Typography>
-          <Typography variant="body1" sx={{ maxWidth: 800, mx: 'auto' }}>
+          <Typography variant="body1" sx={{ 
+            maxWidth: 800, 
+            mx: 'auto',
+            px: { xs: 2, md: 0 }
+          }}>
             We are a homegrown brand committed to quality, crafting skincare with only natural ingredients. Our products are kind to your skin, safe for your body, and gentle on the planet — promoting beauty through sustainability.
           </Typography>
           <Divider sx={{ 
