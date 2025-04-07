@@ -5,6 +5,8 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import EmailIcon from '@mui/icons-material/Email';
+import { Link as RouterLink } from 'react-router-dom';
+import { Link as MuiLink } from '@mui/material';
 
 const Footer: React.FC = () => {
   return (
@@ -30,10 +32,10 @@ const Footer: React.FC = () => {
           <Grid item xs={12} sm={4}>
             <Typography variant="h6" sx={{ mb: 2 }}>Quick Links</Typography>
             <Box sx={{ display: 'flex', flexDirection: 'column' }}>
-              <Link href="/" color="inherit" underline="hover" sx={{ mb: 1 }}>Home</Link>
-              <Link href="/products" color="inherit" underline="hover" sx={{ mb: 1 }}>Products</Link>
-              <Link href="/about" color="inherit" underline="hover" sx={{ mb: 1 }}>About Us</Link>
-              <Link href="/contact" color="inherit" underline="hover" sx={{ mb: 1 }}>Contact</Link>
+              <MuiLink component={RouterLink} to="/" color="inherit" underline="hover" sx={{ mb: 1 }}>Home</MuiLink>
+              <MuiLink component={RouterLink} to="/products" color="inherit" underline="hover" sx={{ mb: 1 }}>Products</MuiLink>
+              <MuiLink component={RouterLink} to="/about" color="inherit" underline="hover" sx={{ mb: 1 }}>About Us</MuiLink>
+              <MuiLink component={RouterLink} to="/contact" color="inherit" underline="hover" sx={{ mb: 1 }}>Contact</MuiLink>
             </Box>
           </Grid>
           <Grid item xs={12} sm={4}>
