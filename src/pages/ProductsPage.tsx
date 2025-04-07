@@ -1,10 +1,19 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Box, Container, Typography, Tabs, Tab, Divider } from '@mui/material';
+import { useLocation } from 'react-router-dom';
 import ProductList from '../components/products/ProductList';
 import { getProductsByCategory, products, CATEGORIES } from '../data/products';
 
 const ProductsPage: React.FC = () => {
+  const location = useLocation();
   const [currentCategory, setCurrentCategory] = useState<string>(Object.values(CATEGORIES)[0]);
+
+  // Check if we have a category in location state (from ProductDetailsPage)
+  useEffect(() => {
+    if (location.state && location.state.category) {
+      setCurrentCategory(location.state.category);
+    }
+  }, [location.state]);
 
   const handleCategoryChange = (_event: React.SyntheticEvent, newValue: string) => {
     setCurrentCategory(newValue);

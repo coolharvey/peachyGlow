@@ -1,11 +1,12 @@
 import React from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, useNavigate } from 'react-router-dom';
 import { Box, Container, Typography, Grid, Button, Divider } from '@mui/material';
 import { Product } from '../components/products/ProductCard';
 import products from '../data/products';
 
 const ProductDetailsPage: React.FC = () => {
   const { id } = useParams<{ id: string }>();
+  const navigate = useNavigate();
   const product = products.find((p: Product) => p.id === Number(id));
 
   if (!product) {
@@ -20,6 +21,11 @@ const ProductDetailsPage: React.FC = () => {
       </Container>
     );
   }
+
+  const handleBackToProducts = () => {
+    // Navigate back to products page with state to set the correct category
+    navigate('/products', { state: { category: product.category } });
+  };
 
   return (
     <Box component="main" sx={{ py: 8 }}>
@@ -82,8 +88,7 @@ const ProductDetailsPage: React.FC = () => {
               Add to Cart
             </Button>
             <Button
-              component={Link}
-              to="/products"
+              onClick={handleBackToProducts}
               variant="outlined"
               size="large"
               sx={{
