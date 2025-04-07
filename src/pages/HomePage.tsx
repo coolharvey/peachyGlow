@@ -87,7 +87,7 @@ const HomePage: React.FC = () => {
               fontFamily: "'Playfair Display', serif"
             }}
           >
-            WHY CHOOSE US
+            WHY CHOOSE US OK
           </Typography>
           <Typography variant="body1" sx={{ maxWidth: 800, mx: 'auto' }}>
             We are a homegrown brand committed to quality, crafting skincare with only natural ingredients. Our products are kind to your skin, safe for your body, and gentle on the planet — promoting beauty through sustainability.
