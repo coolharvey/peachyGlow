@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { ThemeProvider, createTheme, CssBaseline, Box } from '@mui/material';
 import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
@@ -89,6 +89,7 @@ const App: React.FC = () => {
               <Route path="/products/:id" element={<ProductDetailsPage />} />
               <Route path="/about" element={<AboutPage />} />
               <Route path="/contact" element={<ContactPage />} />
+              <Route path="*" element={<Navigate to="/" replace />} />
               {/* Add more routes as needed */}
             </Routes>
           </Box>
